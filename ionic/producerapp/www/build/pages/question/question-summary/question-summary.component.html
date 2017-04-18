@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Question Summary</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let ques of questions;">
+      <ion-col>
+        <h3>Question: {{ques?.text}}</h3>
+      </ion-col>
+      <ion-col>
+        <h5>Answer: {{ques?.answer}}</h5>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

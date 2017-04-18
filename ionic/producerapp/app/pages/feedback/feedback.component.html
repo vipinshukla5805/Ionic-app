@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Feedback</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <prodocuer-profile [imgUrl]="Url" ></prodocuer-profile>
+  
+  <br/>
+  <h1>Additional Comments:</h1>
+  <ion-textarea style="border: 1px solid #e0e0e0;"></ion-textarea>
+  <br/>
+  <button ion-button full (click)="saveFeedback()" >Next</button>
+  <br/>
+  <br/>
+  <button ion-button full clear>Skip</button>
+  <br/>
+  <br/>
+  <progress id="progressbar" style="width:100%" max="100" value="10"> </progress>
+</ion-content>
+
+
+
+

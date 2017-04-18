@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Questions</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <question *ngFor="let ques of slicedQuestions;" [question]="ques" (onAnswerSelection)="onAnswerSelection($event);"></question>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <pager [totalItems]="totalItems" [itemPerPage]="itemPerPage" (onPageChange)="onPageChange($event);"></pager>
+</ion-content>

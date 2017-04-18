@@ -1,0 +1,14 @@
+<ion-card>
+  <ion-card-header>
+    Question: {{question?.id}}
+  </ion-card-header>
+  <ion-card-content>
+    <ion-card-title>
+      {{question?.text}}
+    </ion-card-title>
+    <p *ngIf="question.type == 'Rating'">
+      <rating [ratingValue]="question.answer" (ratingValueChange)="onSelection($event);"
+        [max]="10"></rating>
+    </p>
+  </ion-card-content>
+</ion-card>

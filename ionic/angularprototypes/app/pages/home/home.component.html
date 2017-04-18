@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Rating Component
+    </ion-card-header>
+
+    <ion-card-content>
+      <rating [(ratingValue)]="selectedRating" [max]="10"></rating>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

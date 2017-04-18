@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>AWS</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Auth in AWS Cognito and get data from DynamoDB
+    </ion-card-header>
+
+    <ion-card-content>
+      <button type="submit" (click)="authAndGetData()">start</button>
+      <br>
+      <h3>Items:</h3>
+      <hr>
+      <div *ngFor="let item of items; let i = index;">{{i}}. {{stringify(item)}}</div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Producer Info</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+        <ion-label color="primary" floating>Name</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Role</ion-label>
+        <ion-select [(ngModel)]="gender">
+            <ion-option value="f" selected="true">Admin</ion-option>
+            <ion-option value="m">Temp</ion-option>
+        </ion-select>
+    </ion-item>
+
+
+
+
+    <ion-grid>
+        <ion-row>
+            <ion-col width-90>
+                <ion-label>Profile Photo</ion-label>
+                <ion-card>
+                    <img class="logo" style="margin-left:20%" src="http://www.elmastudio.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png"
+                        alt="">
+                    <ion-icon name="camera" style="margin-left:45%;height:25px"></ion-icon>
+                </ion-card>
+                <button icon-left>Add</button>
+            </ion-col>            
+        </ion-row>
+    </ion-grid>
+
+<ion-list>
+  <ion-item *ngFor="let item of items" >
+    {{item}}
+     <button icon-left clear>Edit</button><button icon-left clear>Delete</button>
+  </ion-item>
+</ion-list>
+
+</ion-content>

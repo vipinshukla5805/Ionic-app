@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Account Setting</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+        <ion-label color="primary" floating>Company Name</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+
+
+    <ion-grid>
+        <ion-row>
+            <ion-col width-90>
+                <ion-label>Company Logo</ion-label>
+                <ion-card>
+                    <img class="logo" style="margin-left:20%" src="http://www.elmastudio.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="">
+                    <ion-icon name="camera" style="margin-left:45%;height:25px" (click)="presentActionSheet()" > &nbsp; Edit</ion-icon>
+                </ion-card>
+                 <button icon-left>Save</button>
+            </ion-col>            
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

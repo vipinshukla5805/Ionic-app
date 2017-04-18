@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="float:left;">Start</ion-title>
+     <ion-icon name="settings" style="float:right;width:40px;padding:5px" (click)="gotoLogin()"></ion-icon>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <h1 style="text-align: center;">Welcome! Please help us improve your experince by providing a brief, anonymous review.</h1>
+  <br/>
+  <button ion-button full (click)="gotoProdcuer()" >Let's Start</button>
+  <br/>
+  <br/>
+  <button ion-button full clear>No Thanks</button>
+  <br/>
+  <br/>
+  <progress id="progressbar" style="width:100%" max="100" value="10"> </progress>
+  <button ion-button color="dark" clear full >Progress</button>
+</ion-content>

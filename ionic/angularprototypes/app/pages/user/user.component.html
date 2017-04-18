@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>User Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let user of (users$ | async)" on-tap="onTap(user);">
+    <img src="{{user.avatar_url}}">
+    <ion-card-content>
+      <ion-card-title>
+        Login Name: {{user.login}}
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
